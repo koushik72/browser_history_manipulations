@@ -21,18 +21,12 @@ if (getQueryVariable('x9')) {
     var urls = [],
         query_string = window.location.pathname;
 
-    var mainUrl = 'http://www.gapt.co/a.html';
+    // this is where the x9 string is used to make a new new    
     var url1 = 'http://track.clixlife.co/' + x9_string + '?bo=d&' + query_string;
     var url2 = 'http://track.clixlife.co/' + x9_string + '?bo=b1&' + query_string;
     var url3 = 'http://track.clixlife.co/' + x9_string + '?bo=b2&' + query_string;
 
 }
-
-// redirect on this url execution
-if (window.location.href == mainUrl) {
-    window.location = 'http://track.clixlife.co/77fa87d3-f63b-4534-9a7d-852bff5c1ef0?bo=d& a=123&b=456&c=789';
-}
-
 
 // redirect on back button click function
 function redirectOnBack(urlToRedirect) {
